@@ -1,12 +1,12 @@
 
 public class Conta {
 	
-	double saldo;
+	double saldo = 100;
 	int agencia ;
 	int numero;
-	String titular;
+	Cliente titular;
 	
-	
+	//PROXIMA AULA 5.1
 	
 	
 	// METADOS

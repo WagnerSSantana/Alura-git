@@ -3,9 +3,25 @@ public class TesteReferencias {
 
 	public static void main(String[] args) {
 		Conta primeiraConta = new Conta();
-		primeiraConta.Saldo = 300;
+		primeiraConta.saldo = 300;
+		System.out.println("Saldo da primeira:" + primeiraConta.saldo);
 		
-		System.out.println("Saldo da primeira:" + primeiraConta.Saldo);
+		Conta segundaConta = primeiraConta;
+		System.out.println("Saldo da segunda conta"+segundaConta.saldo);
+		
+		segundaConta.saldo+= 100;
+		System.out.println("saldo da segunda conta:"+segundaConta.saldo);
+		
+		 
+		System.out.println(primeiraConta.saldo);
+		
+		if (primeiraConta == segundaConta) {
+			System.out.println("sao a mesmissima conta");
+		}
+		
+		System.out.println(primeiraConta);
+		System.out.println(segundaConta);
+		
 	}
 	
 }

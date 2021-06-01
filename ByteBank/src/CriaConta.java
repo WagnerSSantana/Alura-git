@@ -4,26 +4,37 @@ public class CriaConta {
 	public static void main(String[] args) {
 		
 		 Conta primeiraConta = new Conta();
-		 primeiraConta.Saldo = 200;
-		 System.out.println(primeiraConta.Saldo);
+		 primeiraConta.saldo = 200;
+		 System.out.println(primeiraConta.saldo);
 		 
-		 primeiraConta.Saldo += 100;
-		 System.out.println(primeiraConta.Saldo);
+		 primeiraConta.saldo += 100;
+		 System.out.println(primeiraConta.saldo);
 		 
 		 Conta segundaConta = new Conta ();
-		 segundaConta.Saldo = 50;
+		 segundaConta.saldo = 300;
  
 		 
-		 System.out.println("Primeira conta tem "+primeiraConta.Saldo);
-		 System.out.println("Segunda conta tem "+segundaConta.Saldo);
+		 System.out.println("Primeira conta tem "+primeiraConta.saldo);
+		 System.out.println("Segunda conta tem "+segundaConta.saldo);
 		 
-		 System.out.println(primeiraConta.Agencia);
-		 System.out.println(primeiraConta.Numero);
+		 System.out.println(primeiraConta.agencia);
+		 System.out.println(primeiraConta.numero);
+		 primeiraConta.agencia = 146;
+		 System.out.println(segundaConta.agencia);
 		 
-		 System.out.println(segundaConta.Agencia);
+		 segundaConta.agencia = 146;
+		 System.out.println("agora a segunda conta e :"+ segundaConta.agencia);
 		 
-		 segundaConta.Agencia = 146;
-		 System.out.println("agora a segunda conta e :"+ segundaConta.Agencia);
+		 
+		 if (primeiraConta == segundaConta) {
+				System.out.println("mesma conta");
+		}else {
+				System.out.println("contas diferentes");
+		}
+		 
+
+		System.out.println(primeiraConta);
+		System.out.println(segundaConta);
 		
 		
 	}

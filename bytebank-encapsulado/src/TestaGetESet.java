@@ -4,7 +4,6 @@ public class TestaGetESet {
 		
 		Conta conta = new Conta(1337,24226);
 		
-		// AULA 5.5
 		
 		
 		System.out.println(conta.getNumero()); 
